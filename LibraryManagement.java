@@ -40,7 +40,16 @@ class Library {
     public Library() {
         books = new ArrayList<>();
     }
+    public void addBook(Book book) {
+        books.add(book);
+    }
 
+    public void showAllBooks() {
+        System.out.println("Library Catalog:");
+        for (Book book : books) {
+            System.out.println(book);
+        }
+    }
 
 
 
