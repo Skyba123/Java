@@ -30,4 +30,8 @@ class Book {
         return publicationYear;
     }
 
+        public String toString() {
+        return "Title: " + title + ", Author: " + author + ", ISBN: " + isbn + ", Year of publication: " + publicationYear;
+    }
+
 }
