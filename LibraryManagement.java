@@ -45,6 +45,10 @@ class Library {
         books.add(book);
     }
 
+      public List<Book> getBooks() {
+        return books;
+    }
+    
     public void showAllBooks() {
         System.out.println("Library Catalog:");
         for (Book book : books) {
@@ -100,4 +104,7 @@ public class LibraryManagement {
 
         library.showAllBooks();
     }
+ 
+    
 }
+
