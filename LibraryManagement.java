@@ -85,6 +85,19 @@ public class LibraryManagement {
         library.addBook(new Book("Harry Potter", "Joan Rowling", "978-966-7047-39-9", 1997));
 
         library.showAllBooks();
-    }
     
+
+     String searchTitle = "Metro 2033";
+        Book foundBook = library.findBookByTitle(searchTitle);
+        if (foundBook != null) {
+            System.out.println("Found book: " + foundBook);
+        } else {
+            System.out.println("Book with title '" + searchTitle + "' not found in the library.");
+        }
+
+        String isbnToRemove = "978-617-7025-69-5";
+        library.removeBookByIsbn(isbnToRemove);
+
+        library.showAllBooks();
+    }
 }
