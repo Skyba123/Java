@@ -33,6 +33,7 @@ class Book {
         public String toString() {
         return "Title: " + title + ", Author: " + author + ", ISBN: " + isbn + ", Year of publication: " + publicationYear;
     }
+}
 
 class Library {
     private List<Book> books;
@@ -74,4 +75,16 @@ class Library {
     }
   }
 
+
+public class LibraryManagement {
+    public static void main(String[] args) {
+        Library library = new Library();
+
+        library.addBook(new Book("Metro 2033", "D. A. Glukhovsky", "978-966-10-6112-4", 2002));
+        library.addBook(new Book("Adventures of Sherlock Holmes", "Arthur Conan Doyle", "978-617-7025-69-5", 1892));
+        library.addBook(new Book("Harry Potter", "Joan Rowling", "978-966-7047-39-9", 1997));
+
+        library.showAllBooks();
+    }
+    
 }
